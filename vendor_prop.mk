@@ -1,0 +1,5 @@
+#
+# vendor props for flashlmdd
+#
+
+

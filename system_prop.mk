@@ -1,0 +1,4 @@
+#
+# system props for flashlmdd
+#
+
