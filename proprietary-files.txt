@@ -113,13 +113,12 @@ vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcinemaeffect.so
 vendor/lib/libfilm_emulation.so
 vendor/lib/libfilm_emulation_symphony.so
-vendor/lib/liblgdnn.so
+vendor/lib/liblgdnnsnpe.so
 vendor/lib/liblghdri.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmpbase.so
-vendor/lib/libstdc++.so
 vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libAutoContrast.so
@@ -143,13 +142,12 @@ vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcinemaeffect.so
 vendor/lib64/libfilm_emulation.so
 vendor/lib64/libfilm_emulation_symphony.so
-vendor/lib64/liblgdnn.so
+vendor/lib64/liblgdnnsnpe.so
 vendor/lib64/liblghdri.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmorpho_image_stab31.so
 vendor/lib64/libmpbase.so
-vendor/lib64/libstdc++.so
 
 # Camera - Automatic white balancing and exposure
 vendor/lib/camera/fdconfigpreview.bin
