@@ -106,6 +106,7 @@ vendor/lib/libarcsoft_makeup.so
 vendor/lib/libarcsoft_object_tracking.so
 vendor/lib/libarcsoft_singlecam_portrait_lighting.so
 vendor/lib/libbwfocuspeaking.so
+vendor/lib/libcamera_nn_stub.so
 vendor/lib/libcamxfdalgov7.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxstatscore.so
@@ -118,7 +119,11 @@ vendor/lib/liblghdri.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
+vendor/lib/libmorpho_wdr2.so
 vendor/lib/libmpbase.so
+vendor/lib/libsnsapi.so
+vendor/lib/libspectre3.so
+vendor/lib/libtof_cal.so
 vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libAutoContrast.so
@@ -135,6 +140,7 @@ vendor/lib64/libarcsoft_makeup.so
 vendor/lib64/libarcsoft_object_tracking.so
 vendor/lib64/libarcsoft_singlecam_portrait_lighting.so
 vendor/lib64/libbwfocuspeaking.so
+vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamxfdalgov7.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxstatscore.so
@@ -147,7 +153,11 @@ vendor/lib64/liblghdri.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmorpho_image_stab31.so
+vendor/lib64/libmorpho_wdr2.so
 vendor/lib64/libmpbase.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libspectre3.so
+vendor/lib64/libtof_cal.so
 
 # Camera - Automatic white balancing and exposure
 vendor/lib/camera/fdconfigpreview.bin
@@ -227,10 +237,17 @@ vendor/lib/libSNPE.so
 vendor/lib/libSRIyuv.so
 vendor/lib/libc++_shared_snpe.so
 vendor/lib/libcom.qti.chinodeutils.so
+vendor/lib/libdepthcomputation_wrapper.so
 vendor/lib/liblgae_main.so
 vendor/lib/liblgawb_main.so
 vendor/lib/liblgsnpeawb.so
 vendor/lib/liblgsnpeawb_beta.so
+vendor/lib/libsymphony-1.1.2.so
+vendor/lib/libsymphony-1.1.4.so
+vendor/lib/libsymphony-cpu.so
+vendor/lib/libsymphonypower-1.1.2.so
+vendor/lib/libsymphonypower-1.1.4.so
+vendor/lib/libsymphonypower.so
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
@@ -308,10 +325,15 @@ vendor/lib64/libSNPE.so
 vendor/lib64/libSRIyuv.so
 vendor/lib64/libc++_shared_snpe.so
 vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libdepthcomputation_wrapper.so
 vendor/lib64/liblgae_main.so
 vendor/lib64/liblgawb_main.so
 vendor/lib64/liblgsnpeawb.so
 vendor/lib64/liblgsnpeawb_beta.so
+vendor/lib64/libsymphony-1.1.4.so
+vendor/lib64/libsymphony-cpu.so
+vendor/lib64/libsymphonypower-1.1.4.so
+vendor/lib64/libsymphonypower.so
 
 # Camera - components
 vendor/lib/camera/components/com.lge.node.camerasolution.so
@@ -526,9 +548,13 @@ vendor/etc/init/hw/init.lge.fingerprints.rc
 vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/vintf/manifest/vendor.lge.hardware.biometrics.fingerprint@2.1.xml
 vendor/lib64/hw/fingerprint.msmnile.so
+vendor/lib64/libgf_algo.so
+vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/hw/fingerprint.msmnile.so
+vendor/lib/libgf_algo.so
+vendor/lib/libgf_hal.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/usr/idc/goodix_fp_key.idc
 vendor/usr/keylayout/goodix_fp_key.kl
