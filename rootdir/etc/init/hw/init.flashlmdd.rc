@@ -1,0 +1,77 @@
+# This file will be installed as vendor/etc/init/hw/init.{ro.hardware}.rc
+
+# Chipset vendor
+import /vendor/etc/init/hw/init.qcom.rc
+
+# to override init.qcom.rc and init.target.rc
+import /vendor/etc/init/hw/init.lge.usb.rc
+import /vendor/etc/init/hw/init.lge.usb.configfs.rc
+import /vendor/etc/init/hw/init.lge.power.rc
+import /vendor/etc/init/hw/init.lge.sensors.rc
+import /vendor/etc/init/hw/init.lge.fingerprints.rc
+import /vendor/etc/init/hw/init.lge.display.rc
+
+# import chipset common rc file
+import /vendor/etc/init/hw/init.msmnile.rc
+
+# import $(TARGET_PRODUCT) vendor rc file
+import /vendor/etc/init/hw/init.${ro.hardware}_vendor.rc
+
+# Begin Immersion Changes
+service immvibed /vendor/bin/immvibed -p 99 -u 1000
+    class late_start
+    user root
+    group root
+    ioprio rt 4
+
+on post-fs
+# Support tuxera exfat filesystem
+    insmod /vendor/lib/modules/texfat.ko
+    mkdir /mnt/vendor/persist-lg/tof 0776 system camera
+
+########################################
+# BSP Touch DD
+########################################
+on property:vendor.lge.dd.touch_enable=1
+    insmod /vendor/lib/modules/touch_module_s3706.ko
+    restorecon /sys/devices/virtual/input/lge_touch/module
+    restorecon_recursive /sys/devices/virtual/input/lge_touch/module/
+
+on property:vendor.lge.dd.touch_enable=0
+    exec - root -- /vendor/bin/touch_dd.sh
+
+on fs
+    chown system system /mnt/product/els
+    chmod 0755 /mnt/product/els
+    restorecon_recursive /mnt/product/els
+
+    chown system system /mnt/product/persist-lg
+    chmod 0755 /mnt/product/persist-lg
+    restorecon_recursive /mnt/product/persist-lg
+
+    chown system system /mnt/product/mpt
+    chmod 0775 /mnt/product/mpt
+    restorecon_recursive /mnt/product/mpt
+
+    chown system system /mnt/product/srtc
+    chmod 0755 /mnt/product/srtc
+    restorecon_recursive /mnt/product/srtc
+
+    chown system system /mnt/product/fota
+    chmod 0755 /mnt/product/fota
+    restorecon_recursive /mnt/product/fota
+
+    chown system system /mnt/product/quality
+    chmod 0755 /mnt/product/quality
+    restorecon_recursive /mnt/product/quality
+
+    chown system radio /mnt/product/eri
+    chmod 0771 /mnt/product/eri
+    restorecon_recursive /mnt/product/eri
+
+    chown system system /mnt/product/carrier
+    chmod 0771 /mnt/product/carrier
+    restorecon_recursive /mnt/product/carrier
+
+on late-init
+    setprop ro.product.lge.support.waterproof true

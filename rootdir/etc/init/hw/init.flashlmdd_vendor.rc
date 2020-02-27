@@ -1,0 +1,36 @@
+# flashlmdd_lao_com vendor init rc
+
+# For Kinibi(t-base), simlock-security@lge.com
+import /vendor/etc/init/init.kinibi.rc
+
+on post-fs-data
+# NFC: create data/nfc for nv storage
+    mkdir /data/vendor/nfc 0770 nfc nfc
+
+# IMEI_Protection start
+# Add ipd service
+service vendor.ipd /vendor/bin/ipd
+    class main
+    user system
+    group radio system net_raw
+# IMEI_Protection end
+
+# LGU+ CNAS [START]
+on init
+    # Storage views to support runtime permissions
+    mkdir /mnt/runtime/default/cnas 0755 root root
+    mkdir /mnt/runtime/read/cnas 0755 root root
+    mkdir /mnt/runtime/write/cnas 0755 root root
+    mkdir /mnt/runtime/full/cnas 0755 root root
+
+    symlink /storage/self/cnas    /mnt/media_rw/cnas
+
+on post-fs-data
+    mkdir /data/cnas 0775 vendor_cnas_rw vendor_cnas_rw
+    mkdir /data/cnas-cfg 0775 vendor_cnas_rw vendor_cnas_rw
+    mkdir /data/cnas-cfg/obb 0775 vendor_cnas_rw vendor_cnas_rw
+    mkdir /data/cnas-cfg/photo_thumb 0775 vendor_cnas_rw vendor_cnas_rw
+    mkdir /data/cnas-cfg/video_thumb 0775 vendor_cnas_rw vendor_cnas_rw
+
+    setprop vold.watch_cnas_fuseops_unique 0
+# LGU+ CNAS [END]
