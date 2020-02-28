@@ -90,6 +90,10 @@ vendor/lib/rfsa/adsp/WmaStdDecoderModule.so.1
 # Audio amplifier firmware
 vendor/firmware/Tfa9872.cnt
 
+# Bluetooth firmware
+vendor/firmware/crbtfw21.tlv
+vendor/firmware/crnv21.bin
+
 # Camera
 vendor/lib/hw/camera.msmnile.so
 vendor/lib/hw/com.qti.chi.override.so
