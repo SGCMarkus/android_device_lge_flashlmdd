@@ -19,6 +19,9 @@ DEVICE_PATH := device/lge/flashlmdd
 # inherit from common v50
 -include device/lge/sm8150-common/BoardConfigCommon.mk
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=flashlmdd
 TARGET_KERNEL_CONFIG := vendor/lineage_flash_defconfig
