@@ -125,6 +125,7 @@ vendor/lib/libsnsapi.so
 vendor/lib/libspectre3.so
 vendor/lib/libtof_cal.so
 vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
+vendor/lib64/hw/camera.msmnile.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libAutoContrast.so
 vendor/lib64/libCmcPdaf.so
