@@ -123,8 +123,10 @@ vendor/lib/libarcsoft_singlecam_portrait_lighting.so
 vendor/lib/libbwfocuspeaking.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libcamxfdalgov7.so
+vendor/lib/libcamxfdalgov8.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxstatscore.so
+vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcinemaeffect.so
 vendor/lib/libfilm_emulation.so
@@ -158,8 +160,10 @@ vendor/lib64/libarcsoft_singlecam_portrait_lighting.so
 vendor/lib64/libbwfocuspeaking.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamxfdalgov7.so
+vendor/lib64/libcamxfdalgov8.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcinemaeffect.so
 vendor/lib64/libfilm_emulation.so
