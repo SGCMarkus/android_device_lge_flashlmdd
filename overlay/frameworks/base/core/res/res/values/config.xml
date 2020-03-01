@@ -63,14 +63,13 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
-        <item>8</item>
-        <item>26</item>
-        <item>60</item>
-        <item>130</item>
-        <item>270</item>
-        <item>560</item>
-        <item>1200</item>
-        <item>2900</item>
+        <item>13</item>
+        <item>45</item>
+        <item>100</item>
+        <item>400</item>
+        <item>800</item>
+        <item>1500</item>
+        <item>3000</item>
     </integer-array>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
@@ -78,8 +77,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">8000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">3000</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
     <integer name="config_brightness_ramp_rate_fast">180</integer>
@@ -99,16 +98,15 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>8.59</item>
-        <item>21.46</item>
-        <item>41.66</item>
-        <item>71.7</item>
-        <item>95.94</item>
-        <item>113.5</item>
-        <item>131.2</item>
-        <item>168.6</item>
-        <item>247.8</item>
-        <item>400.3</item>
+        <item>7.9</item>
+        <item>21.4</item>
+        <item>43.0</item>
+        <item>112.2</item>
+        <item>138.3</item>
+        <item>219.9</item>
+        <item>241.2</item>
+        <item>384.4</item>
+        <item>550.0</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -117,14 +115,13 @@
     <integer-array name="config_screenBrightnessBacklight">
         <item>10</item>
         <item>40</item>
-        <item>72</item>
-        <item>98</item>
-        <item>120</item>
-        <item>142</item>
-        <item>150</item>
-        <item>162</item>
-        <item>177</item>
-        <item>207</item>
+        <item>63</item>
+        <item>85</item>
+        <item>128</item>
+        <item>140</item>
+        <item>171</item>
+        <item>178</item>
+        <item>218</item>
         <item>255</item>
     </integer-array>
 
@@ -135,17 +132,16 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
-        <item>2.27</item>
-        <item>8.59</item>
-        <item>21.46</item>
-        <item>41.66</item>
-        <item>71.7</item>
-        <item>95.94</item>
-        <item>113.5</item>
-        <item>131.2</item>
-        <item>168.6</item>
-        <item>247.8</item>
-        <item>400.3</item>
+        <item>2.5</item>
+        <item>7.9</item>
+        <item>21.4</item>
+        <item>43.0</item>
+        <item>112.2</item>
+        <item>138.3</item>
+        <item>219.9</item>
+        <item>241.2</item>
+        <item>384.4</item>
+        <item>550.0</item>
     </array>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
