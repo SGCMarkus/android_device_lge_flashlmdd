@@ -457,6 +457,18 @@ vendor/etc/camera/iqm/wb_graph_imx351w.dlc
 vendor/etc/camera/iqm/wb_graph_imx363.dlc
 vendor/etc/camera/iqm/wb_graph_s5k3m5t.dlc
 
+# Camera - eeprom
+vendor/lib/camera/com.qti.eeprom.imx351_m24c32.so
+vendor/lib/camera/com.qti.eeprom.imx363_m24c64m.so
+vendor/lib/camera/com.qti.eeprom.s5k3m5_m24c32.so
+vendor/lib/camera/com.qti.eeprom.sl556_m24c64m.so
+vendor/lib/camera/com.qti.eeprom.sl846_m24c64m.so
+vendor/lib64/camera/com.qti.eeprom.imx351_m24c32.so
+vendor/lib64/camera/com.qti.eeprom.imx363_m24c64m.so
+vendor/lib64/camera/com.qti.eeprom.s5k3m5_m24c32.so
+vendor/lib64/camera/com.qti.eeprom.sl556_m24c64m.so
+vendor/lib64/camera/com.qti.eeprom.sl846_m24c64m.so
+
 # Camera - Sensor
 vendor/lib/camera/com.qti.sensor.imx351.so
 vendor/lib/camera/com.qti.sensor.imx363.so
