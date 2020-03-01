@@ -58,6 +58,11 @@ TARGET_SCREEN_HEIGHT := 3120
 # Display
 TARGET_SCREEN_DENSITY := 560
 
+# Dual Display
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/keylayout/touch_dev_2nd.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touch_dev_2nd.idc \
+    $(DEVICE_PATH)/keylayout/Vendor_1004_Product_637a.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_1004_Product_637a.kl
+
 # Init
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.flashlmdd:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.flashlmdd
