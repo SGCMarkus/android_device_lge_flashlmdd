@@ -519,6 +519,7 @@ product/lib/vendor.qti.hardware.qseecom@1.0.so
 product/lib64/vendor.qti.hardware.qseecom@1.0.so
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
+vendor/bin/cpfirmware
 vendor/bin/qseecomd
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
