@@ -3168,7 +3168,7 @@
 
     <path name="voip-loopback headphones">
         <ctl name="SLIM_6_RX_Voice Mixer Voip" value="1" />
-        <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
+        <ctl name="Voip_Tx Mixer SLIM_1_TX_Voip" value="1" />
     </path>
 
     <path name="voip-loopback bt-sco">
