@@ -44,7 +44,7 @@ TARGET_VENDOR_PRODUCT_NAME := flashlmdd_lao_eea
 TARGET_VENDOR_DEVICE_NAME := flashlmdd
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=flashlmdd \
+    PRODUCT_DEVICE=flashlmdd \
     PRODUCT_NAME=flashlmdd_lao_com \
     PRIVATE_BUILD_DESC="flashlmdd_lao_com-user 10 QKQ1.191021.002 2000817367779 release-keys"
 
