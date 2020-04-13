@@ -1,0 +1,15 @@
+<manifest version="1.0" type="device" target-level="4">
+    <hal format="hidl">
+        <name>vendor.lge.hardware.audio.dac.control</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDacAdvancedControl</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDacHalControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>
