@@ -22,9 +22,6 @@ DEVICE_PATH := device/lge/flashlmdd
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=flashlmdd
 TARGET_KERNEL_CONFIG := vendor/lineage_flash_defconfig
