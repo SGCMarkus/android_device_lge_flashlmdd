@@ -40,38 +40,3 @@ on property:vendor.lge.dd.touch_enable=1
 on property:vendor.lge.dd.touch_enable=0
     exec - root -- /vendor/bin/touch_dd.sh
 
-on fs
-    chown system system /mnt/product/els
-    chmod 0755 /mnt/product/els
-    restorecon_recursive /mnt/product/els
-
-    chown system system /mnt/product/persist-lg
-    chmod 0755 /mnt/product/persist-lg
-    restorecon_recursive /mnt/product/persist-lg
-
-    chown system system /mnt/product/mpt
-    chmod 0775 /mnt/product/mpt
-    restorecon_recursive /mnt/product/mpt
-
-    chown system system /mnt/product/srtc
-    chmod 0755 /mnt/product/srtc
-    restorecon_recursive /mnt/product/srtc
-
-    chown system system /mnt/product/fota
-    chmod 0755 /mnt/product/fota
-    restorecon_recursive /mnt/product/fota
-
-    chown system system /mnt/product/quality
-    chmod 0755 /mnt/product/quality
-    restorecon_recursive /mnt/product/quality
-
-    chown system radio /mnt/product/eri
-    chmod 0771 /mnt/product/eri
-    restorecon_recursive /mnt/product/eri
-
-    chown system system /mnt/product/carrier
-    chmod 0771 /mnt/product/carrier
-    restorecon_recursive /mnt/product/carrier
-
-on late-init
-    setprop ro.product.lge.support.waterproof true

@@ -13,16 +13,8 @@
 # and fails if it does not find it.
 /dev/block/bootdevice/by-name/misc                                   /misc                   emmc    defaults                                                                  defaults
 /dev/block/bootdevice/by-name/ftm                                    /ftm                    emmc    defaults                                                                  defaults
-/dev/block/bootdevice/by-name/els                                    /mnt/product/els        ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
 /dev/block/bootdevice/by-name/sns                                    /mnt/vendor/sns         ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
-/dev/block/bootdevice/by-name/p_persist_lg                           /mnt/product/persist-lg ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
-/dev/block/bootdevice/by-name/mpt                                    /mnt/product/mpt        ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
-/dev/block/bootdevice/by-name/srtc                                   /mnt/product/srtc       ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
 /dev/block/bootdevice/by-name/power                                  /mnt/vendor/power       ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
-/dev/block/bootdevice/by-name/fota                                   /mnt/product/fota       emmc    defaults                                                                  defaults
-/dev/block/bootdevice/by-name/operatorlogging                        /mnt/product/quality    ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
-/dev/block/bootdevice/by-name/eri                                    /mnt/product/eri        ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
-/dev/block/bootdevice/by-name/carrier                                /mnt/product/carrier    ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
 /dev/block/bootdevice/by-name/persdata                               /mnt/vendor/absolute    ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue            wait,check,formattable
 /dev/cnas                                                            auto                    auto    defaults                                                                  voldmanaged=cnas:auto
 
