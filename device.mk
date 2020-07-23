@@ -47,7 +47,7 @@ TARGET_SCREEN_HEIGHT := 3120
 # DAC
 PRODUCT_PACKAGES += \
     QuadDACPanel \
-    lge.hardware.audio.dac.control@1.0-service
+    vendor.lge.hardware.audio.dac.control@1.0-service
 
 # Display
 TARGET_SCREEN_DENSITY := 560
