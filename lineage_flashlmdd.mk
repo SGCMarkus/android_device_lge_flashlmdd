@@ -40,7 +40,7 @@ PRODUCT_MODEL := LM-V500
 
 PRODUCT_GMS_CLIENTID_BASE := android-lge
 
-TARGET_VENDOR_PRODUCT_NAME := flashlmdd_lao_eea
+TARGET_VENDOR_PRODUCT_NAME := flashlmdd_lao_com
 TARGET_VENDOR_DEVICE_NAME := flashlmdd
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -51,7 +51,7 @@ BUILD_FINGERPRINT := "lge/flashlmdd_lao_com/flashlmdd:10/QKQ1.191021.002/2000817
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \
-    ro.vendor.product.model \
+    ro.product.odm.model \
+    ro.product.product.model \
     ro.product.system.model \
-    ro.product.name \
-    ro.product.vendor.name
+    ro.product.vendor.model
