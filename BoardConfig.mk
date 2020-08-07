@@ -36,7 +36,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.flashlmdd
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-05-01
+VENDOR_SECURITY_PATCH := 2020-07-01
 
 # inherit from the proprietary version
 -include vendor/lge/flashlmdd/BoardConfigVendor.mk
