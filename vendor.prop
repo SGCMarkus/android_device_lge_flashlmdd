@@ -2,6 +2,10 @@
 # vendor props for lge flashlmdd
 #
 
+# Audio
+persist.vendor.audio.voicecall.speaker.stereo=true
+persist.vendor.lge.audio.voice.clarity=off
+
 # LGE Misc
 ro.vendor.lge.build.target_country=COM
 ro.vendor.lge.build.target_operator=LAO
