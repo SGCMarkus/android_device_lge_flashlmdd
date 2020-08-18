@@ -49,9 +49,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "lge/flashlmdd_lao_com/flashlmdd:10/QKQ1.191021.002/2019923065c92:user/release-keys"
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.model \
-    ro.product.odm.model \
-    ro.product.product.model \
-    ro.product.system.model \
-    ro.product.vendor.model
