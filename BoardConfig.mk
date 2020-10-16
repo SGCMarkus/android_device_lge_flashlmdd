@@ -27,7 +27,7 @@ TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.flashlmdd
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-07-01
+VENDOR_SECURITY_PATCH := 2020-09-01
 
 # inherit from the proprietary version
 -include vendor/lge/flashlmdd/BoardConfigVendor.mk
