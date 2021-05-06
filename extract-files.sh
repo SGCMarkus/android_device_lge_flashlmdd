@@ -60,10 +60,12 @@ done
 function blob_fixup() {
     case "${1}" in
     vendor/lib/hw/camera.msmnile.so)
-        "${PATCHELF}" --replace-needed "libc++.so" "libc++-v29.so" "${2}"
+        # "${PATCHELF}" --replace-needed "libc++.so" "libc++-v29.so" "${2}"
+		sed -i "s/libc++.so/libc29.so/" "${2}"
         ;;
     vendor/lib64/hw/camera.msmnile.so)
-        "${PATCHELF}" --replace-needed "libc++.so" "libc++-v29.so" "${2}"
+        # "${PATCHELF}" --replace-needed "libc++.so" "libc++-v29.so" "${2}"
+		sed -i "s/libc++.so/libc29.so/" "${2}"
         ;;
     esac
 }
