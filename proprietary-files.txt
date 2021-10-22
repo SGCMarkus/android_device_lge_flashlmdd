@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from LM-V500EM 20q
+# All unpinned blobs below are extracted from LM-V500EM 30a
 
 # Camera
 vendor/lib/hw/camera.msmnile.so
@@ -28,14 +28,11 @@ vendor/lib/libfilm_emulation.so
 vendor/lib/libfilm_emulation_symphony.so
 vendor/lib/liblgdnnsnpe.so
 vendor/lib/liblghdri.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmorpho_wdr2.so
 vendor/lib/libmpbase.so
 vendor/lib/libsnsapi.so
 vendor/lib/libspectre3.so
-vendor/lib/libtof_cal.so
 vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
 vendor/lib64/hw/camera.msmnile.so
 vendor/lib64/hw/com.qti.chi.override.so
@@ -65,14 +62,11 @@ vendor/lib64/libfilm_emulation.so
 vendor/lib64/libfilm_emulation_symphony.so
 vendor/lib64/liblgdnnsnpe.so
 vendor/lib64/liblghdri.so
-vendor/lib64/libmmcamera_faceproc.so
-vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmorpho_image_stab31.so
 vendor/lib64/libmorpho_wdr2.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libspectre3.so
-vendor/lib64/libtof_cal.so
 
 # Camera - Automatic white balancing and exposure
 vendor/lib/camera/fdconfigpreview.bin
