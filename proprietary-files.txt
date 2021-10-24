@@ -405,6 +405,7 @@ vendor/firmware/CAMERA_ICP.elf
 
 # Sensors
 vendor/lib/sensors.ssc.so
+vendor/lib64/sensors.sar.so
 vendor/lib64/sensors.ssc.so
 
 # Wifi - Firmware
