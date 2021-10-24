@@ -42,7 +42,7 @@ TARGET_VENDOR_DEVICE_NAME := flashlmdd
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="flashlmdd_lao_com" \
-    PRIVATE_BUILD_DESC="flashlmdd_lao_com-user 10 QKQ1.191021.002 210771107e0c8 release-keys"
+    PRIVATE_BUILD_DESC="flashlmdd_lao_com-user 11 RKQ1.210420.001 2122112261c44 release-keys"
 
-BUILD_FINGERPRINT := "lge/flashlmdd_lao_com/flashlmdd:10/QKQ1.191021.002/210771107e0c8:user/release-keys"
+BUILD_FINGERPRINT := "lge/flashlmdd_lao_com/flashlmdd:11/RKQ1.210420.001/2122112261c44:user/release-keys"
 
