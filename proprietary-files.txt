@@ -653,6 +653,7 @@ vendor/firmware/CAMERA_ICP.elf
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.sar.so
 vendor/lib64/sensors.ssc.so
+vendor/lib64/vendor.lge.hardware.sensors@1.0.so
 
 # Wifi - Firmware
 vendor/etc/wifi/bdwlan.bin
